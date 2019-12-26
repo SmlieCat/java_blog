@@ -1,0 +1,164 @@
+/*栏杉宽度*/
+.m-padded-mini{
+    padding: 0.2em !important;
+
+}
+.m-padded-tb-min{
+    padding-top: 0.2em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb{
+    padding-top: 1em  !important;
+    padding-bottom: 1em !important;
+}
+
+.m-padded-tb-large{
+    padding-top: 2em  !important;
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-big{
+    padding-top: 3em  !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-huge{
+    padding-top: 4em  !important;
+    padding-bottom: 4em !important;
+}
+
+.m-padded-tb-massive{
+    padding-top: 5em  !important;
+    padding-bottom: 5em !important;
+}
+/*文章左右间距*/
+.m-padded-lr{
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
+
+/*字体*/
+.m-text{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.7;
+}
+.m-text-thin{
+    font-weight: 400 !important;
+
+}
+/*字间距*/
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+/*行间距*/
+.m-text-lined{
+    line-height: 2.5;
+}
+/*透明度*/
+.m-opacity-mini{
+    opacity: 0.8 !important;
+}
+
+.m-inline-block{
+    display: inline-block !important;
+}
+
+.m-container{
+    max-width: 80em !important;
+    margin: auto !important;
+}
+
+.m-margin-tp-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-black{
+    color: #333 !important;
+}
+/*位置*/
+.m-top-right{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+/*移动端隐藏*/
+@media screen  and (max-width: 768px){
+    .m-mobile-hide{
+        display: none !important;
+    }
+    .m-padded-lr{
+        padding-left: 0em !important;
+        padding-right: 0em !important;
+    }
+    .m-mobile-wide{
+        margin-bottom: 0.2em !important;
+        width: 100% !important;
+    }
+
+
+}
+
+/*浏览器隐藏*/
+@media screen  and (min-width: 768px){
+    .m-pc-hide{
+        display: none !important;
+
+    }
+    /*背景样式*/
+    body{
+        background: url("https://wx2.sinaimg.cn/large/0062Ep7ely1fz5cjn54wjj30uk0rc1kx.jpg") no-repeat right 50%;
+        background-attachment:fixed;
+        /*background-size: cover;*/
+        background-size: contain;
+    }
+
+}
+
+
+
+/* 下拉菜单样式---------------------------------------------------------- */
+@media(min-width:768px){
+    .banner {
+        background: url(http://ws2.sinaimg.cn/large/0062Ep7ely1fz1m3nw8ukj30zk0cztgj.jpg) repeat-x;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+    }
+    .navbar-nav > li > a {
+        padding: .5em 1em;
+    }
+}
+
+
+
+@media(max-width:768px){
+    .banner {
+        background: url(http://ws2.sinaimg.cn/large/0062Ep7ely1fz5cpj6i07j30nm0v4af5.jpg) repeat-x;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        padding: 0.1em 0 0.1em;
+
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        float: none;
+        background: rgba(0, 0, 0, 0.39);
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background: none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+}
+

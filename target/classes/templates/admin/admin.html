@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    设置浏览器自适应-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/m1.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/music_bg.css">
+
+</head>
+<body>
+
+<!--导航-->
+<!--<nav class="ui inverted attached segment m-padded-tb-min">-->
+<!--雪花-->
+
+<div class="htmleaf-content">
+    <canvas class="snow-canvas" speed="1" interaction="false" size="2" count="80" opacity="0.00001" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" wind-power="0" image="false" width="1366" height="667"></canvas>
+    <canvas class="snow-canvas" speed="3" interaction="true" size="6" count="30" start-color="rgba(253,252,251,1)" end-color="rgba(251,252,253,0.3)" opacity="0.00001" wind-power="2" image="false" width="1366" height="667"></canvas>
+    <canvas class="snow-canvas" speed="3" interaction="true" size="12" count="20" wind-power="-5"
+            image="./static/images/snow.png" width="1366" height="667"></canvas>
+
+    <div class="banner">
+        <nav class="navbar navbar-default" style="margin-top: 10px">
+
+            <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <div class="ui container">
+                            <div class="ui inverted secondary stackable menu">
+                                <h2 class="ui teal header item">后台管理</h2>
+                                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>博客</a>
+                                <a href="#" class="active m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+
+                                <div class="right menu">
+                                    <div class="ui dropdown m-item item">
+                                        <div class="text">
+                                            <img src="https://picsum.photos/id/1005/100/100" alt="" class="ui avatar image">
+                                            用户名
+                                        </div>
+                                        <i class="dropdown icon"></i>
+                                        <div class="menu">
+                                            <a href="#" class="item">注销</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+        </nav>
+
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-top-right m-pc-hide">
+        <i class="sidebar icon"></i>
+    </a>
+<!--    二级导航-->
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <a href="#" class="item">发布</a>
+            <a href="#" class="active item">列表</a>
+        </div>
+
+    </div>
+<!--</nav>-->
+
+<!--中间内容-->
+<div class="m-padded-tb-large">
+    <div class="ui container">
+        <form action="#" method="post" class="ui segment form">
+            <div class="inline fields">
+                <div class="field m-mobile-wide">
+                    <input type="text" name="title" placeholder="标题">
+                </div>
+                <div class="field m-mobile-wide">
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="type">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">分类</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">日志1</div>
+                            <div class="item" data-value="2">日志2</div>
+                            <div class="item" data-value="3">日志3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" neme="recommend">
+                        <label for="recommend">推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="ui basic button mini"><i class="search icon"></i></button>
+                </div>
+            </div>
+
+        </form>
+        <table class="ui table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>标题</th>
+                    <th>类型</th>
+                    <th>推荐</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>内容</td>
+                    <td>内容</td>
+                    <td>内容</td>
+                    <td>内容</td>
+                    <td>
+                        <a href="#" class="ui mini teal button">编辑</a>
+                        <a href="#" class="ui mini red button">删除</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui mini right floated pagination menu">
+                            <a href="" class="icon item">
+                                <i class="left chevron icon"></i>
+                            </a>
+                            <a href="" class="item">1</a>
+                            <a href="" class="item">2</a>
+                            <a href="" class="item">3</a>
+                            <a href="" class="item">4</a>
+                            <a href="" class="icon item">
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="ui teal mini basic button">新增</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+
+    </div>
+</div>
+
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive ">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column ">
+                <div class="ui inverted link list">
+                  <div class="item">
+                      <img src="../../static/images/28098377_p0.png" class="ui rounded image" alt="" style="width: 120px">
+                  </div>
+                </div>
+
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">最新故事</a>
+                    <a href="#" class="item">最新故事</a>
+                    <a href="#" class="item">最新故事</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">最新故事</a>
+                    <a href="#" class="item">最新故事</a>
+                    <a href="#" class="item">最新故事</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <p class="m-opacity-mini">段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落段落</p>
+            </div>
+
+        </div>
+<!--        地部线-->
+        <div class="ui inverted  section divider">
+            <p class="m-text-lined m-text-spaced m-opacity-mini">© Copyright © 2018 听风博客 <a href="http://www.miitbeian.gov.cn/" target="_blank" >辽ICP备18017671号</a></p>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+
+<script>
+        // 移动端菜单控制
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+        //用户头像下拉组件
+        $('.ui.dropdown').dropdown({
+            on : 'hover'
+        });
+</script>
+
+    <!--下雪-->
+    <script src="../../static/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="../../static/js/snow-plugin.js"></script>
+    <script>
+        $(function(){
+            $(".snow-canvas").snow();
+        });
+    </script>
+
+
+</body>
+</html>
